@@ -1,0 +1,13 @@
+interface:
+  display_name: Hebrew Proofreading and Academic Writing
+  short_description: Hebrew proofreading and academic writing with local language
+    checks
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
+policy:
+  products:
+  - chatgpt
+  - codex
+  - api
+  - atlas
+  allow_implicit_invocation: true
