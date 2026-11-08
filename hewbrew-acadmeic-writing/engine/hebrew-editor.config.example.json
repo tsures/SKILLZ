@@ -1,0 +1,10 @@
+{
+  "register": "academic",
+  "maxSentenceWords": 35,
+  "disabledRules": [],
+  "enabledRules": [],
+  "severityOverrides": {},
+  "terms": [],
+  "ktivMale": {},
+  "allowWords": []
+}

@@ -1,0 +1,20 @@
+# פלט הקוצרים — לא להפצה
+engine/data/
+engine/node_modules/
+engine/.probe/
+scratch/
+
+# מטמון הסקריפטים
+.cache/
+__pycache__/
+*.pyc
+
+# התאמות אישיות של המשתמש
+profile.md
+hebrew-editor.config.json
+
+# פלט בנייה שאינו נדרש בזמן ריצה — dist/*.js כן נשמר בריפו
+engine/dist/**/*.d.ts
+engine/dist/*.d.ts
+engine/dist/**/*.map
+engine/dist/*.map

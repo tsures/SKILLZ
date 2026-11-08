@@ -1,0 +1,56 @@
+{
+  "name": "hebrew-editor-mcp",
+  "version": "0.1.0",
+  "description": "שרת MCP לעריכה לשונית-ספרותית והגהה בעברית לפי כללי האקדמיה ללשון העברית — מנוע כללים ומורפולוגיה מקומי, ללא שירותים בתשלום",
+  "type": "module",
+  "bin": {
+    "hebrew-editor-mcp": "dist/index.js"
+  },
+  "main": "dist/index.js",
+  "files": [
+    "dist",
+    "scripts",
+    "README.md",
+    "LICENSE",
+    "hebrew-editor.config.example.json"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsc -p tsconfig.json --watch",
+    "start": "node dist/index.js",
+    "test": "node --test dist/test/*.test.js",
+    "check": "npm run build && npm test",
+    "cli": "node dist/cli.js",
+    "harvest": "node scripts/harvest-academy.mjs",
+    "enrich": "node scripts/enrich-ktiv.mjs",
+    "lexicon": "node dist/cli.js --lexicon",
+    "harvest:idioms": "node scripts/harvest-idioms.mjs",
+    "harvest:places": "node scripts/harvest-places.mjs",
+    "harvest:topics": "node scripts/harvest-topics.mjs",
+    "harvest:decisions": "node scripts/harvest-decisions.mjs",
+    "harvest:syntax": "node scripts/harvest-syntax.mjs"
+  },
+  "keywords": [
+    "mcp",
+    "hebrew",
+    "עברית",
+    "הגהה",
+    "עריכה-לשונית",
+    "האקדמיה-ללשון-העברית",
+    "proofreading",
+    "morphology",
+    "nikud"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.2"
+  }
+}
